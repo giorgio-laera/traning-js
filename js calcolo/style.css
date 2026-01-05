@@ -1,0 +1,55 @@
+
+body{
+   text-align: center;
+}
+main{
+     margin: 0 auto;
+    grid-template-rows: 5em 2em 2em;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1em;
+    width: 35%;
+}
+form{
+    grid-column:1/ span 12;
+     grid-template-rows: 2em 2em;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.5em;
+}
+#btnContainer{
+    
+      grid-column: 1/ span 12;
+     grid-template-rows: 2em;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.5em;
+}
+.uno{
+    grid-column: span 6;
+}
+
+.due{
+    grid-column: span 6;
+}
+.btnform{
+    grid-column:6 /span 2;
+}
+.col-3{
+    grid-column: span 3;
+}
+.bgSomma{
+    background-color: green;
+}
+.bgDifferenza{
+    background-color: crimson;
+}
+.bgMoltiplicazione{
+    background-color: violet;
+}
+.bgDivisione{
+    background-color: yellow;
+}
+.dNone{
+    display: none;
+}
+.dGrid{
+    display:grid;
+}
