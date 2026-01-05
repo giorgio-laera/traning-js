@@ -32,20 +32,26 @@ form{
 .btnform{
     grid-column:6 /span 2;
 }
-.col-3{
-    grid-column: span 3;
+.verticalAling{
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .bgSomma{
     background-color: green;
+    grid-column: 1/span 3;
 }
 .bgDifferenza{
     background-color: crimson;
+    grid-column: 4/span 3;
 }
 .bgMoltiplicazione{
     background-color: violet;
+    grid-column: 7/span 3;
 }
 .bgDivisione{
     background-color: yellow;
+    grid-column: 10/span 3;
 }
 .dNone{
     display: none;

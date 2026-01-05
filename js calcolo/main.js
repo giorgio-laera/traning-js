@@ -7,6 +7,7 @@ const btnDifferenzaEl = document.getElementById("btnDifferenza");
 const btnMoltiplicazioneEl = document.getElementById("btnMoltiplicazione");
 const btnDivisioneEl = document.getElementById("btnDivisione");
 
+   document.getElementById("btnContainer").classList.remove("dGrid");
 
 sendEl.addEventListener("click", function (event) {
     event.preventDefault();
@@ -20,7 +21,7 @@ sendEl.addEventListener("click", function (event) {
         alert("ATTENZIONE IL SECONDO NUMERO NON E VALIDO!!");
     } else {
         console.log(`il primo numero è: ${firstNumberEl.value}`, `il secondo numero è:${secondNumberEl.value}`);
-        document.querySelectorAll("btnContainer").classList.remove("dNone");
+        document.getElementById("btnContainer").classList.add("dGrid");
 
         btnSommaEl.addEventListener("click", function () {
           
